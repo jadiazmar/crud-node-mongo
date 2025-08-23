@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "uri": "mongodb://127.0.0.1:27017/crudDB",
+    "options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "api": {
+    "baseUrl": "http://localhost:3000",
+    "docs": "http://localhost:3000/api-docs"
+  }
+}

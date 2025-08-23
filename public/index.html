@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD con Node + Mongo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Formulario de Login -->
+<div id="authSection">
+  <button class="cancelBtn" onclick="logout()">Cerrar Sesión</button>
+</div>
+
+  <h1>CRUD de Items</h1>
+
+  <form id="itemForm">
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="text" id="description" placeholder="Descripción">
+    <button type="submit">Agregar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="itemsTable"></tbody>
+  </table>
+  
+   <!-- Formulario de edición oculto -->
+  <div id="editForm" style="display:none; margin-top:20px;">
+  <h3>Editar Item</h3>
+  <input type="text" id="editName" placeholder="Nuevo nombre" required>
+  <input type="text" id="editDescription" placeholder="Nueva descripción">
+  <button class="editBtn" onclick="updateItem()">Guardar Cambios</button>
+<button class="cancelBtn" onclick="cancelEdit()">Cancelar</button>
+</div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
