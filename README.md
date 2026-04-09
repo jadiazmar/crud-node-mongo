@@ -6,7 +6,7 @@ Este proyecto demuestra habilidades en desarrollo backend, diseño de APIs REST,
 
 ---
 
-## 🧠 Características principales
+##  Características principales
 
 * 🔐 Registro y login de usuarios
 * 🔑 Encriptación de contraseñas con bcrypt
@@ -19,7 +19,7 @@ Este proyecto demuestra habilidades en desarrollo backend, diseño de APIs REST,
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 * Node.js
 * Express.js
@@ -33,25 +33,35 @@ Este proyecto demuestra habilidades en desarrollo backend, diseño de APIs REST,
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
+```bash
 crud-node-mongo/
 │
+├─ .idea/
 ├─ config/
 │   └─ config.json
+│
 ├─ models/
 │   ├─ Item.js
 │   └─ User.js
-├─ routes/
-│   ├─ authRoutes.js
-│   └─ itemRoutes.js
+│
+├─ postman/
+│   └─ collection.json
+│
 ├─ public/
+│   ├─ app.js
 │   ├─ index.html
 │   ├─ login.html
-│   ├─ app.js
+│   ├─ login.js
 │   └─ style.css
-├─ server.js
+│
+├─ routes/
+│
+├─ img.png
+├─ README.md
+└─ server.js
 ├─ package.json
 └─ package-lock.json
 ```
